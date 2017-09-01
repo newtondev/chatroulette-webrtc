@@ -1,0 +1,25 @@
+extends layout
+
+block content
+
+  div(class='container')
+    div(class='jumbotron')
+      h1 Chat Roulette
+
+  div(class='row')
+    div(class='col-md-6')
+      h3(class='text-center') Local Video
+        div(class='embed-responsive embed-responsive-4by3')
+          video(class='embed-responsive-item local-video', autoplay)
+
+
+    div(class='col-md-6')
+      h3(class='text-center') Remote Video
+        div(class='embed-responsive embed-responsive-4by3')
+          video(class='embed-responsive-item remote-video', autoplay)
+
+  div(class='row')
+    div(class='col-md-6')
+      button(class='btn-lg btn-primary center-block btn-block', onclick='toggleVideoPlayPause()') Stop
+    div(class='col-md-6')
+      button(class='btn-lg btn-primary center-block btn-block btn-next') NEXT

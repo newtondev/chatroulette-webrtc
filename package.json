@@ -1,0 +1,22 @@
+{
+  "name": "chatroulette-webrtc",
+  "version": "1.0.0",
+  "description": "Chat Roulette app build using Node.js and WebRTC",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "bootstrap": "cp node_modules/bootstrap/dist/css/bootstrap.css public/css/bootstrap.min.css & cp node_modules/bootstrap/dist/js/bootstrap.min.js public/js/bootstrap.min.js & cp node_modules/jquery/dist/jquery.min.js public/js/jquery.min.js",
+    "postinstall": "npm run bootstrap"
+  },
+  "author": "Craig Newton <newtondev@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.4",
+    "jade": "^1.11.0",
+    "jquery": "^3.2.1",
+    "peer": "^0.2.8",
+    "socket.io": "^2.0.3"
+  }
+}
